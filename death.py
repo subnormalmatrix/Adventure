@@ -17,5 +17,3 @@ class Death(Plot):
         print(f'\n{self.death_msg[randint(0, len(self.death_msg) - 1)]}') # randomly select death messages to display
         exit(1)
 
-trial = Death()
-trial.enter()

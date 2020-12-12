@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from plot import Plot
 from textwrap import dedent
 
@@ -38,7 +40,7 @@ class CaveMouth(Plot):
                 You manage to grab a stick lying around and hit the head of this disgusting beast, killing it instantly.
                 However, it seems the others together with the princess have escaped through an opening in the back of the cave. 
                 Track and rescue the princess\n"""))
-                return 'The woods'
+                return 'the_woods'
 
             elif choice_2 == 'Fight it':
                 print(dedent("""
@@ -60,6 +62,6 @@ class CaveMouth(Plot):
             return 'death'
         
         else:
-            print("Pick one of the two choices imbecile!. It's either you man up and 'Enter' the cave or 'Run Away' like a coward, jeez!!!")
+            print("Pick one of the two choices moron!. It's either you man up and 'Enter' the cave or 'Run Away' like a coward, jeez!!!")
             return 'cave_mouth'
 

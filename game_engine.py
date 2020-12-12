@@ -11,4 +11,9 @@ class game_engine(object):
             next_plot_name = current_plot.enter()      # next scene name
             current_plot = self.plot.next_plot(next_plot_name)
 
+        # print out the last plot
+        current_plot.enter()
+
+
+
     

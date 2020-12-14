@@ -29,7 +29,7 @@ class CaveMouth(Plot):
             It stinks of deep waters, its breath smells like fish. 
             It watches you from the dark with its beady green eyes, its scaly skin shimmering in the dark like silver.
             Even from where it stands, you feel its blood lust.
-            What do you do? 'Tell a joke', 'Fight it or 'Charge through'?\n"""))
+            What do you do? 'Tell a joke', 'Fight it' or 'Charge through'?\n"""))
 
             choice_2 = input('> ')
 

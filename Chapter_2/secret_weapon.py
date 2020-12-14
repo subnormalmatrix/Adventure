@@ -25,7 +25,6 @@ class SecretWeapon(Plot):
         """))
 
         passcode = f'{randint(0,9)}{randint(0,9)}{randint(0,9)}{randint(0,9)}'
-        print(passcode)
         hint = list(passcode)
         hint.pop(1) # remove second number
         hint.pop(1) # remove third number

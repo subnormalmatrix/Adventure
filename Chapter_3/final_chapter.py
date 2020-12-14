@@ -27,7 +27,6 @@ class FinalChapter(Plot):
             You only have three attempts to correctly guess the number between 0-6 to activate the weapon. Failure would mean certain death!
             """))
             code = f'{randint(0,5)}'
-            print(code)
             guesses = 0
             guess = input('[keypad]> ')
 

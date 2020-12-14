@@ -18,7 +18,6 @@ class PrincessBlood(Plot):
         """))
 
         code = f'{randint(0,9)}'
-        print(code)
         guesses = 0
         guess = input('[keypad]> ')
 

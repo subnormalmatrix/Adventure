@@ -58,7 +58,7 @@ class CaveMouth(Plot):
 
 
         elif choice_1 == 'Run Away':
-            print('Even a eunuch monk has more balls than you do. What a loser!')
+            print('Even a eunuch has more balls than you do. What a loser!')
             return 'death'
         
         else:

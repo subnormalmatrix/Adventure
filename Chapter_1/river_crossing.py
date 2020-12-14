@@ -36,7 +36,7 @@ class RiverCrossing(Plot):
 
             GREAT JOB SO FAR! END OF CHAPTER 1\n
             """))
-            return "king's_hideout"
+            return "kings_hideout"
 
         elif choice == "Pelt foe with a stone":
             print(dedent("""

@@ -9,6 +9,8 @@ class FinalChapter(Plot):
 
     def enter(self):
         print(dedent("""
+        FINAL CHAPTER
+        
         The King has mustered all his able warriors and appointed you as their captain to lead them into battle.
         Your task is to infiltrate the enemy's base, plant the weapon at the centre of the enemy's cap and then disarm it.
         Using stealth mode techniques, your army together with yourself disarm and kill all the sea dwellers guarding the entrance.

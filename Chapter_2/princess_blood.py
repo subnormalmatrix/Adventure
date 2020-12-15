@@ -9,6 +9,8 @@ class PrincessBlood(Plot):
     
     def enter(self):
         print(dedent("""
+        PRINCESS BLOOD
+        
         You have successfully retrieved the secret weapon and brought it to the King's hideout.
         The legend makes it clear that secret weapon can only be operated by the blood of the King's daughter.
         The King's team of scientists and historians have studied the weapon and found something interesting.
@@ -30,7 +32,10 @@ class PrincessBlood(Plot):
             print(dedent("""
             You guessed the number correctly, a glass vial slows pops out. The scientists carefully fill this vial with blood so graciously provided by the Princess.
             When the vial is placed back into the weapon it makes a clicking sound and then the color changes from bright green to dark red, showing the weapon is activated.
-            All that is left now is to attack the base of the sea dwellers and finish off every last one of them!\n
+            All that is left now is to attack the base of the sea dwellers and finish off every last one of them!
+            
+            END OF CHAPTER 2!
+            \n
             """)) 
             return 'final_chapter'
 

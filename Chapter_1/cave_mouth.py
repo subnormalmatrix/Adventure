@@ -25,6 +25,8 @@ class CaveMouth(Plot):
             Do yout best! Rescue Princess Mensima and save the kingdom of the surface dwellers\n"""))
             
             print(dedent("""
+            CAVE MOUTH
+            
             Upon entering the cave, your footsteps startles one of the sea dwellers who happened to be taking a piss nearby.
             It stinks of deep waters, its breath smells like fish. 
             It watches you from the dark with its beady green eyes, its scaly skin shimmering in the dark like silver.

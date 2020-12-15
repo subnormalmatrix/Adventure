@@ -8,6 +8,8 @@ class TheWoods(Plot):
 
     def enter(self):
         print(dedent("""
+        THE WOODS
+
         After making your way through the back of the cave, you stumble into the woods.
         You squint your eyes for a second, the sun shining brightly over your head.
         The air is fresh, the birds are chirping, the monkeys are running up and down the branches
@@ -16,7 +18,7 @@ class TheWoods(Plot):
         One is covering her mouth with its webbed hand, she is struggling to break free.
         The Princess Mensima is truly beautiful but this is no time to be admiring her beauty as one sea dweller approaches.
         The other sea dweller uses the opportunity to escape.
-        What do yo do now ?
+        What do you do now ?
         'Fight', 'Tell a joke', 'Chase after the princess?'\n
          """))
 

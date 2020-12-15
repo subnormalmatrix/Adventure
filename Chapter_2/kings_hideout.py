@@ -9,6 +9,8 @@ class KingsHideout(Plot):
 
     def enter(self):
         print(dedent(""" 
+        KING'S HIDEOUT
+        
         Well done on rescuing the Princess Mensima. The Kingdom of surface dwellers is forever in your debt.
         However, you are still not out of the woods yet. You have to take the Princess back to the King's hideout.
         You begin your slow descent of Manjaro into the surrounding valley. There's a shortcut to get the Princess safely to the King.

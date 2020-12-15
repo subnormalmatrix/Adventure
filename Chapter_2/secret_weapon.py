@@ -9,6 +9,8 @@ class SecretWeapon(Plot):
 
     def enter(self):
         print(dedent("""
+        SECRET WEAPON
+
         Great job so far!. The King is pleased with you and showers you with many gifts. However, he asks you to help him once again.
         Legend has is that a secret weapon of mass destruction is hidden in an unmarked location between the foothills of Manjaro
         and the swamp region of Mosengo. During the time you were gone, the surveyours of the King's court were able to pinpoint the exact location of the weapon.
@@ -16,7 +18,7 @@ class SecretWeapon(Plot):
         
         Soon enough you arrive at the location. It's an abandoned hideout, a cave of sorts with ancient writings and hieroglyphics.
         The surveyor takes the lead, you follow behind together with the two guards cautiously watching for any booby traps.
-        A few more steps and the surveyor suddenly stops. He seems to be pointing to a strange looking case. The surveyor then tells you the
+        A few more steps and the surveyor suddenly stops. He seems to be pointing at a strange looking case. The surveyor then tells you the
         case houses the secret weapon the legend foretold, but there is something the legend left out. 
         
         On closer inspection, you realise the casing requires a four digit code eah digit between 0-9 to be entered before it can ever be opened.
@@ -37,7 +39,7 @@ class SecretWeapon(Plot):
             print("Wrong!")
 
             if m == 0:
-                choice = input("Do you want a hint? y' or 'n'?> ")
+                choice = input("Do you want a hint? 'y' or 'n'?> ")
                 if choice == 'y':
                     print(f'\nthe first and last numbers are {hint}')
                     m += 1

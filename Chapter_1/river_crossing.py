@@ -8,6 +8,8 @@ class RiverCrossing(Plot):
 
     def enter(self):
         print(dedent("""
+        RIVER CROSSING
+        
         After defeating the sea dweller, you chase after the remaining foe and the princess.
         The sound of twigs breaking under your sole as you follow the screams of Princess Mensima.
         Suddenly you see two figures struggling in the distance, you quicken your pace.

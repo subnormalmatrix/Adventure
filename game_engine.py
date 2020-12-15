@@ -1,3 +1,5 @@
+import time
+
 class GameEngine(object):
 
     def __init__(self, plot_map):
@@ -9,6 +11,8 @@ class GameEngine(object):
 
         while current_plot != last_plot:
             next_plot_name = current_plot.enter()      # next scene name
+            print("Loading................................................................................\n")
+            time.sleep(5)  # delay for 5 seconds
             current_plot = self.plot.next_plot(next_plot_name)
 
         # print out the last plot

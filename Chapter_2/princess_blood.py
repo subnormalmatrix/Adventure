@@ -14,7 +14,7 @@ class PrincessBlood(Plot):
         You have successfully retrieved the secret weapon and brought it to the King's hideout.
         The legend makes it clear that secret weapon can only be operated by the blood of the King's daughter.
         The King's team of scientists and historians have studied the weapon and found something interesting.
-        There's a small nob at the base of the button that would not budge unless a single digit between 0-9 is entered.
+        There's a small nob at the base of the weapon that would not budge unless a single digit between 0-9 is entered.
         Much like the situation in the cave no one can tell what will happen after all attempts to guess this code correctly fails.
         Once again the fate of an entire Kingdom rests on your shoulders! You have only 5 attempts\n
         """))

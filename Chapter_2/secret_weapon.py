@@ -21,7 +21,7 @@ class SecretWeapon(Plot):
         A few more steps and the surveyor suddenly stops. He seems to be pointing at a strange looking case. The surveyor then tells you the
         case houses the secret weapon the legend foretold, but there is something the legend left out. 
         
-        On closer inspection, you realise the casing requires a four digit code eah digit between 0-9 to be entered before it can ever be opened.
+        On closer inspection, you realise the casing requires a four digit code each digit between 0-9 to be entered before it can ever be opened.
         You only have 10 attempts to enter the code, fail and something indescribable and certainly not good might befall you.
 
         """))

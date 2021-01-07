@@ -26,9 +26,9 @@ class FinalChapter(Plot):
             print(dedent("""
             You make a gesture of dropping the weapon and your foe starts to sweat and puts its hands up in surrender.
             You inch closely towards the center and then carefully place the bomb on the floor. You quickly run out of the room, reaching for the disarmer in your pocket in the process.
-            You only have three attempts to correctly guess the number between 0-6 to activate the weapon. Failure would mean certain death!
+            You only have three attempts to correctly guess the number between 1-6 to activate the weapon. Failure would mean certain death!
             """))
-            code = f'{randint(0,5)}'
+            code = f'{randint(1,6)}'
             guesses = 0
             guess = input('[keypad]> ')
 

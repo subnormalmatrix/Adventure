@@ -15,7 +15,7 @@ class Death(Plot):
             "Run along to your mother now, loser!",
             "Sigh, some adventurer you are mate!"
         ]
-        print(f'{self.death_msg[randint(0, len(self.death_msg) - 1)]}') # randomly select death messages to display
+        print(f'{self.death_msg[randint(0, len(self.death_msg) - 1)]}\n') # randomly select death messages to display
         time.sleep(5)
         exit(1)
 

@@ -20,14 +20,14 @@ class KingsHideout(Plot):
         """))
         choice = input('> ')
 
-        if choice == 'Fight':
+        if choice.lower().strip() == 'fight':
             print(dedent("""
             Well, well, well, Superman, that was unwise. You are easily subdued by your enemies.
             The Princess' scream is the last thing you hear before your head is torn off from your body.\n
             """))
             return 'death'
 
-        elif choice == 'Run':
+        elif choice.lower().strip() == 'run':
             print(dedent("""
             Quick thinking, sea dwellers are much slower on land than at sea.
             You run away together with the Princess in the other direction, traversing the long route to get to the King's hideout.
@@ -36,7 +36,7 @@ class KingsHideout(Plot):
             """))
             return 'secret_weapon'
 
-        elif choice == 'Tell a joke':
+        elif choice.lower().strip() == 'tell a joke':
             print(dedent("""
             Unfortunately, you have run out of stupid jokes to tell. You are dead!
             Hades can't wait to hear your jokes in the afterlife \n

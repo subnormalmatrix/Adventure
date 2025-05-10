@@ -21,14 +21,14 @@ class RiverCrossing(Plot):
 
         choice = input('> ')
 
-        if choice == 'Tell a joke':
+        if choice.lower().strip() == 'tell a joke':
             print(dedent("""
             After five minutes of listening to your corny jokes, the sea dweller gets bored. It chokes the princess to death.
             It then charges towards you, spears you to the ground and gouges your eyes out. You are dead!\n
             """))
             return 'death'
 
-        elif choice == 'Charge at the foe':
+        elif choice.lower().strip() == 'charge at the foe':
             print(dedent("""
             You charge at your foe, startled by your choice of action, it releases its grip of the Princess and tries to brace itself for collision.
             The princess wisely moves out of the way, just seconds before you spear the sea dweller to the ground.
@@ -40,7 +40,7 @@ class RiverCrossing(Plot):
             """))
             return "kings_hideout"
 
-        elif choice == "Pelt foe with a stone":
+        elif choice.lower().strip() == "pelt foe with a stone":
             print(dedent("""
             You fly three stones in quick succession, aiming for the head of the sea dweller but it uses the princess as its shield.
             Two of the stones hit her, one strikes her head and kills her instantly.

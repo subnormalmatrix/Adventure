@@ -14,11 +14,12 @@ class GameEngine(object):
             next_plot_name = current_plot.enter()      # next scene name
             time.sleep(3)
             
-            for i in range(21):
-                sys.stdout.write('\r')
-                sys.stdout.write('LOADING [%-20s] %d%%' % ('='*i, 5*i))
-                sys.stdout.flush()
-                time.sleep(0.50)
+            if next_plot_name == "death":
+                for i in range(21):
+                    sys.stdout.write('\r')
+                    sys.stdout.write('LOADING [%-20s] %d%%' % ('='*i, 5*i))
+                    sys.stdout.flush()
+                    time.sleep(0.50)
                 
             print('\n')
 

@@ -24,7 +24,7 @@ class TheWoods(Plot):
 
         choice = input('>' )
 
-        if choice == 'Fight':
+        if choice.lower().strip() == 'fight':
             print(dedent("""
             From your previous encouter with a sea dweller, you know to aim for its head.
             You pick an unevenly shaped rock and throw it at its head.
@@ -33,7 +33,7 @@ class TheWoods(Plot):
             """))
             return 'river_crossing'
 
-        elif choice == 'Tell a joke':
+        elif choice.lower().strip() == 'tell a joke':
             print(dedent("""
             If a comedian is what it took to save the kingdom, we would have employed the services of the King's Jester.
             You are kicked in the groin, you grovel to the ground, writhing in pain.
@@ -42,7 +42,7 @@ class TheWoods(Plot):
             ))
             return 'death'
 
-        elif choice == 'Chase after the princess':
+        elif choice.lower().strip() == 'chase after the princess':
             print(dedent("""
             It's a bad move Romeo, an uppercut lands perfectly on your chin. It's a knockout, an untimely death\n
             """))

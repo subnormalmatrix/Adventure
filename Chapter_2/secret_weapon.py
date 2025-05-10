@@ -3,7 +3,6 @@ sys.path.append('../')
 
 from plot import Plot
 from textwrap import dedent
-from random import randint
 
 class SecretWeapon(Plot):
 
@@ -11,69 +10,42 @@ class SecretWeapon(Plot):
         print(dedent("""
         SECRET WEAPON
 
-        Great job so far!. The King is pleased with you and showers you with many gifts. However, he asks you to help him once again.
-        Legend has is that a secret weapon of mass destruction is hidden in an unmarked location between the foothills of Manjaro
-        and the swamp region of Mosengo. During the time you were gone, the surveyours of the King's court were able to pinpoint the exact location of the weapon.
-        All that is left is its retrieval. The King orders two of his most trusted bodyguards and one of his brightest surveyors to accompany you to the site.
-        
-        Soon enough you arrive at the location. It's an abandoned hideout, a cave of sorts with ancient writings and hieroglyphics.
-        The surveyor takes the lead, you follow behind together with the two guards cautiously watching for any booby traps.
-        A few more steps and the surveyor suddenly stops. He seems to be pointing at a strange looking case. The surveyor then tells you the
-        case houses the secret weapon the legend foretold, but there is something the legend left out. 
-        
-        On closer inspection, you realise the casing requires a four digit code each digit between 0-9 to be entered before it can ever be opened.
-        You only have 10 attempts to enter the code, fail and something indescribable and certainly not good might befall you.
+        Great job so far! The King is pleased with you and showers you with many gifts. However, he asks you to help him once again.
+        Legend has it that a secret weapon of mass destruction is hidden in an unmarked location between the foothills of Manjaro
+        and the swamp region of Mosengo. During the time you were gone, the surveyors of the King's court pinpointed its exact location.
+        All that remains is its retrieval. The King orders two of his most trusted bodyguards and one of his brightest surveyors
+        to accompany you to the site.
 
+        Soon enough, you arrive at the location. It's an abandoned hideout—a cave of sorts with ancient writings and hieroglyphics.
+        The surveyor takes the lead. You follow behind, together with the two guards, cautiously watching for booby traps.
+        A few more steps and the surveyor suddenly stops, pointing at a strange-looking case. He tells you the case houses
+        the secret weapon the legend foretold—but there is more to this tale.
+
+        On closer inspection, you realize the casing requires a four-digit code (each digit 0–9) to open. You have only one chance
+        to enter the correct code before the mechanism locks forever.
+
+        Etched on the metal are these riddles to guide you to the sequence:
+        1. "Begin with the smallest prime in the Fibonacci sequence."
+        2. "Next, continue to the very next number in that sequence."
+        3. "Then, follow the pattern: each number is the sum of its two predecessors."
+        4. "Finally, stop at the first value less than ten after repeating this sum."
+
+        Make your single attempt wisely; failure is fatal.
         """))
 
-        passcode = f'{randint(0,9)}{randint(0,9)}{randint(0,9)}{randint(0,9)}'
-        hint = list(passcode)
-        hint.pop(1) # remove second number
-        hint.pop(1) # remove third number
-        guesses = 0  # number of guesses
-        m = 0
 
+        passcode = '2358'
         guess = input('[keypad]> ')
-        
-        while  passcode != guess and  guesses < 9:
-            print("Wrong!")
 
-            if m == 0:
-                choice = input("Do you want a hint? 'y' or 'n'?> ")
-                if choice == 'y':
-                    print(f'\nthe first and last numbers are {hint}')
-                    m += 1
-                elif choice == 'n':
-                    pass
-            guesses += 1
-            guess = input('[keypad]> ')
-
-        if guess == passcode:
+        if guess.strip() == passcode:
             print(dedent("""
-            With a soft click, the case opens, revealing the secret weapon. It gives off a bright green glow, the surveyor takes the weapon with great care and places it in a bag.
-            The party together with yourself leave the cave headed for the king's hideout\n
+            With a soft click, the case opens, revealing the secret weapon. It gives off a bright green glow. The surveyor carefully
+            places the weapon in a reinforced bag. With the prize secured, you and your party depart the cave, victorious.
             """))
             return 'princess_blood'
-
         else:
             print(dedent("""
-            After the last try at cracking the code, there's a loud noise, followed by a quake, the cave collapses in, killing and burying you all in the process.
-            Game over!\n
+            A deafening click resonates through the chamber. The edges of the case glow red, then the mechanism seals shut forever.
+            A tremor shakes the cave, and darkness overtakes you. Game over.
             """))
             return 'death'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        

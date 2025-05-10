@@ -19,7 +19,7 @@ class CaveMouth(Plot):
         name = input("What is your name? > ")
         choice_1 = input(f"\nGreat Adventurer {name}, infront of you lies the mouth of the cave. Will you 'Enter' or 'Run Away' like a spineless coward? > ")
         print('\n')
-        if choice_1 == 'Enter':
+        if choice_1.lower().strip() == 'enter':
             print(dedent("""
             Oh great and marvelous adventurer, the kingdom of surface dwellers thanks you for the courage.
             Do yout best! Rescue Princess Mensima and save the kingdom of the surface dwellers\n"""))
@@ -35,7 +35,7 @@ class CaveMouth(Plot):
 
             choice_2 = input('> ')
 
-            if choice_2 == 'Tell a joke':
+            if choice_2.lower().strip() == 'tell a joke':
                 print(dedent("""
                 Luckily for you, all those years of telling corny lame jokes seem to have paid off.
                 The sea dweller is holding its sides and laughing, rolling on the floor. 
@@ -44,12 +44,12 @@ class CaveMouth(Plot):
                 Track and rescue the princess\n"""))
                 return 'the_woods'
 
-            elif choice_2 == 'Fight it':
+            elif choice_2.lower().strip() == 'fight it':
                 print(dedent("""
                 Watching a couple of anime episodes does not make you a fighter mate!. The sea dweller kills you with one blow """))
                 return 'death'
 
-            elif choice_2 == 'Charge through' :
+            elif choice_2.lower().strip() == 'charge through' :
                 print(dedent("""
                 You think this is a game of football?. You get mowed down like a pancake, see you in the afterlife"""))
                 return 'death'
@@ -59,7 +59,7 @@ class CaveMouth(Plot):
                 return 'cave_mouth'
 
 
-        elif choice_1 == 'Run Away':
+        elif choice_1.lower().strip() == 'run away':
             print('Even a eunuch has more balls than you do. What a loser!')
             return 'death'
         

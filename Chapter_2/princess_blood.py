@@ -3,7 +3,7 @@ sys.path.append('../')
 
 from plot import Plot
 from textwrap import dedent
-from random import randint
+import random
 
 class PrincessBlood(Plot):
     
@@ -12,23 +12,27 @@ class PrincessBlood(Plot):
         PRINCESS BLOOD
         
         You have successfully retrieved the secret weapon and brought it to the King's hideout.
-        The legend makes it clear that secret weapon can only be operated by the blood of the King's daughter.
-        The King's team of scientists and historians have studied the weapon and found something interesting.
-        There's a small nob at the base of the weapon that would not budge unless a single digit between 0-9 is entered.
-        Much like the situation in the cave no one can tell what will happen after all attempts to guess this code correctly fails.
-        Once again the fate of an entire Kingdom rests on your shoulders! You have only 5 attempts\n
+        The legend is clear: the weapon can only be activated by the blood of the King's daughter — but that alone is not enough.
+
+        A sealed dial lies at the base of the weapon, unmoving.
+        The King’s scholars discovered an inscription barely legible on the metal casing — clues to a 3-digit code required to awaken the device.
+
+        "Begin with the smallest odd prime — neither too low nor too high."
+        "The second is its square — power compounding itself."
+        "The last is lonely, yet necessary. The number before nothing, and the start of all things."
+
+        You realize this isn’t just a code — it’s a test. One mistake, and the dial may lock for good.
+        You have three attempts to enter the correct sequence.
+
+        The fate of the Kingdom once again rests on your shoulders \n
         """))
 
-        code = f'{randint(0,9)}'
-        guesses = 0
+
+        code = "391"
         guess = input('[keypad]> ')
 
-        while guess != code and guesses < 4:
-            print('Wrong!')
-            guesses += 1
-            guess = input('[keypad]')
 
-        if guess == code:
+        if guess.strip() == code:
             print(dedent("""
             You guessed the number correctly, a glass vial slows pops out. The scientists carefully fill this vial with blood so graciously provided by the Princess.
             When the vial is placed back into the weapon it makes a clicking sound and then the color changes from bright green to dark red, showing the weapon is activated.
